@@ -10,6 +10,36 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;
+}
+.noScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.modal::-webkit-scrollbar {
+  width: 4px;
+}
+
+.typeOne::-webkit-scrollbar {
+  width: 4px;
+}
+.typeOne::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.typeOne::-webkit-scrollbar-thumb {
+  background: #9f7d35;
+}
+
+.typeMuff4::-webkit-scrollbar {
+  width: 4px;
+}
+.typeMuff4::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.typeMuff4::-webkit-scrollbar-thumb {
+  background: #b2b0b2;
 }
 
 code {

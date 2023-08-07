@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { ModalContext } from "../../App";
+import { Link } from "react-router-dom";
+import ExternalLinkIcon from "../icons/ExternalLinkIcon";
 
 const MUFF4 = () => {
   const { modal, setModal } = useContext(ModalContext);
@@ -19,12 +21,14 @@ const MUFF4 = () => {
           <img
             className="h-[650px] lg:h-full absolute lg:inset-0 object-cover object-bottom"
             src="/muff4_1.png"
+            alt="4th mujungryuck film festival related"
           />
           <div className="h-[700px] w-[30%]"></div>
           <div className="lg:w-[80%] w-full h-[640px] lg:p-5 p-2 flex flex-col justify-start items-end z-10">
             <img
               className=" w-full lg:w-[700px] object-cover py-10 lg:p-10 lg:mb-10 "
               src="/muff4_poster.png"
+              alt="4th mujungryuck film festival related"
             />
             <p className="font-bold px-3 underline">
               MUJUNGRYUCK FILM FESTIVAL, SEOUL'21
@@ -41,7 +45,7 @@ const MUFF4 = () => {
         </div>
         <div className="w-full h-full flex flex-col lg:flex-row lg:justify-between justify-start items-start snap-center relative">
           <video
-            className="h-[90%] object-cover absolute left-[3%] bottom-0 lg:blur-none blur-lg "
+            className="h-[90%] object-cover absolute left-[3%] bottom-0 lg:blur-none blur-lg opacity-70 lg:opacity-100"
             src="/muff4_door.mp4"
             autoPlay
             loop
@@ -87,6 +91,7 @@ const MUFF4 = () => {
           <img
             className="w-full lg:w-[80%]  absolute lg:right-0 bottom-0 p-10 hidden lg:flex"
             src="/muff4_trailer.png"
+            alt="4th mujungryuck film festival related"
           />
           <div className="w-full h-[400px] lg:h-[700px] relative flex flex-col justify-start items-start">
             <iframe
@@ -116,36 +121,44 @@ const MUFF4 = () => {
           <img
             className="h-full object-cover absolute left-0 bottom-0 "
             src="/muff4_merch_1.png"
+            alt="4th mujungryuck film festival related"
           />
 
           <img
-            className="h-[450px] absolute right-0 bottom-0 "
+            className="h-[450px] absolute right-0 bottom-0 object-cover "
             src="/muff4_merch-cardbottom.png"
+            alt="4th mujungryuck film festival related"
           />
           <img
             className="h-[460px] absolute right-0 top-0 object-cover"
             src="/muff4_merch-cardtop.png"
+            alt="4th mujungryuck film festival related"
           />
           <img
             className="h-[250px] absolute m-1 lg:m-3 left-0 top-0 "
             src="/muff4_merch-tape.png"
+            alt="4th mujungryuck film festival related"
           />
           <img
             className="h-[110px] absolute m-1 lg:m-3 right-[8%] top-[45%] "
             src="/muff4_icons-34.png"
+            alt="4th mujungryuck film festival related"
           />
           <img
             className="h-[100px] absolute m-1 lg:m-3 right-[33%] bottom-[3%] "
             src="/muff4_icons-32.png"
+            alt="4th mujungryuck film festival related"
           />
           <img
             className="h-[90px] absolute m-1 lg:m-3 right-[35%] top-[5%] "
             src="/muff4_icons-35.png"
+            alt="4th mujungryuck film festival related"
           />
 
           <img
             className="h-[100px] absolute m-1 lg:m-3 left-[5%] top-[50%] "
             src="/muff4_icons-33.png"
+            alt="4th mujungryuck film festival related"
           />
           <div className="w-full h-[700px] relative flex flex-col justify-start items-start"></div>
           <div className="absolute lg:px-20 w-full h-[300px] top-[30%] lg:h-auto lg:w-[80%] text-left">
@@ -162,33 +175,55 @@ const MUFF4 = () => {
         </div>
         <div className="w-full h-full flex flex-col lg:flex-row lg:justify-between justify-start items-start snap-center relative">
           <img
-            className="h-full object-cover absolute left-0 bottom-0 "
-            src="/muff4_merch_1.png"
+            className="h-full object-cover absolute right-0 top-0 lg:blur-0 blur-lg "
+            src="/muff4_poster_mu.png"
+            alt="4th mujungryuck film festival related"
+          />
+          <img
+            className="w-full px-24 object-cover drop-shadow-lg absolute bottom-[15%] lg:blur-0 blur-lg "
+            src="/muff4_photos.png"
+            alt="4th mujungryuck film festival related"
           />
 
-          <img
-            className="h-[450px] absolute right-0 bottom-0 "
-            src="/muff4_merch-cardbottom.png"
-          />
-          <img
-            className="h-[460px] absolute right-0 top-0 object-cover"
-            src="/muff4_merch-cardtop.png"
-          />
-          <img
-            className="h-[250px] absolute m-1 lg:m-3 left-0 top-0 "
-            src="/muff4_merch-tape.png"
-          />
           <div className="w-full h-[700px] relative flex flex-col justify-start items-start"></div>
-          <div className="absolute lg:px-20 w-full h-[300px] top-[30%] lg:h-auto lg:w-[80%] text-left">
-            <p className="px-3 font-bold underline">MERCH</p>
-            <p className="p-3 lg:text-base text-sm">
-              굿즈 디자인은 출품한 12개의 작품들 하나하나의 핵심 요소를
-              아이콘으로 만들고 영화의 장면들을 일러스트로 그려내었습니다.
-              온라인 상영회로 진행되었기 때문에 신청자에 한하여 굿즈를 택배로
-              발송해야 했습니다. 따라서 너무 무게가 나가는 구성보단 카드
-              캘린더나 엽서, 티켓, 책갈피 등의 가벼운 물품들 위주로 굿즈
-              패키지가 구성되었습니다.
+          <div className="absolute lg:px-20 w-full h-[300px] top-[15%] lg:h-auto lg:w-[60%] text-left">
+            <p className="px-3 font-bold underline">FURTHER INFORMATIONS</p>
+            <p className="p-3 lg:text-base text-sm whitespace-pre-wrap">
+              주최/주관: 무중력지대 양천, 시네마디, 서울특별시, 양천구{`\n`}
+              기획팀: 오유진(팀장) 양보라, 정혜원, 황반석{`\n`}
+              기획단(시네마디 4기): 김미경 김민지 김경혜 김종률 안현지 윤태영
+              황시연{`\n`}
+              디자인: 황반석{`\n`}
             </p>
+            <div className="p-3 lg:text-base text-sm whitespace-pre-wrap underline">
+              <a
+                className="flex flex-row gap-2"
+                href="https://www.joongang.co.kr/article/24132182#home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                무중력영화제 관련 기사{" "}
+                <ExternalLinkIcon color="#b2b0b2" width="15px" />
+              </a>
+              <a
+                className="flex flex-row gap-2"
+                href="https://www.instagram.com/youthzone_muff/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                무중력영화제 인스타그램{" "}
+                <ExternalLinkIcon color="#b2b0b2" width="15px" />
+              </a>
+              <a
+                className="flex flex-row gap-2"
+                href="https://movie.daum.net/filmfest/main?filmfestId=360&evtId=3609"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                다음영화 무중력영화제 관련 정보{" "}
+                <ExternalLinkIcon color="#b2b0b2" width="15px" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

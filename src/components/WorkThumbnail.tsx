@@ -23,7 +23,7 @@ const WorkThumbnail: React.FC<WorkThumbnailProps> = ({ work }) => {
       >
         <img
           src={`/${work.id}.png`}
-          className="w-full absolute object-cover hover:scale-105 transition-all"
+          className="w-full absolute object-cover hover:scale-105 duration-500 transition-all"
         />
       </div>
       <p className="font-bold text-lg text-[#9f7d35] mt-4">{work.title}</p>

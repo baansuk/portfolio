@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import { ModalContext } from "../App";
 import MUFF4 from "../components/works/MUFF4";
+import MZY from "../components/works/MZY";
+import MUFF5 from "../components/works/MUFF5";
+import MZYIllust from "../components/works/MZYillust";
 
 const Modal = ({}) => {
   const { modal, setModal } = useContext(ModalContext);
@@ -20,7 +23,17 @@ const Modal = ({}) => {
       </div>
       <div className="w-[100%] h-screen p-5 lg:px-[15%] pb-20 lg:pt-10 absolute flex flex-col justify-center items-center ">
         <div className="w-[100%] h-[100%] rounded-xl inset-0 z-40 drop-shadow-lg overflow-hidden flex flex-col justify-start items-start">
-          <MUFF4 />
+          {modal.id === "muff4" ? (
+            <MUFF4 />
+          ) : modal.id === "mzy" ? (
+            <MZY />
+          ) : modal.id === "muff5" ? (
+            <MUFF5 />
+          ) : modal.id === "mzyIllust" ? (
+            <MZYIllust />
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </div>

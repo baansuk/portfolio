@@ -1,18 +1,19 @@
 [
   {
-    "id": "mzy",
-    "title": "무중력지대 양천 리브랜딩",
-    "year": "2021",
-    "association": "서울시 청년공간 무중력지대 양천",
-    "category": "Graphic Desgin"
-  },
-  {
     "id": "muff4",
     "title": "제4회 무중력영화제 MUFF 브랜딩",
     "year": "2021",
     "association": "서울시 청년공간 무중력지대 양천",
     "category": "Graphic Desgin"
   },
+  {
+    "id": "mzy",
+    "title": "무중력지대 양천 브랜딩",
+    "year": "2021",
+    "association": "서울시 청년공간 무중력지대 양천",
+    "category": "Graphic Desgin"
+  },
+
   {
     "id": "muff5",
     "title": "제5회 무중력영화제 MUFF 브랜딩",
@@ -21,10 +22,24 @@
     "category": "Graphic Desgin"
   },
   {
-    "id": "mzystory",
+    "id": "mzyStory",
     "title": "무중력스토리: 나의 이야기를 찾아서",
     "year": "2021",
     "association": "서울시 청년공간 무중력지대 양천",
+    "category": "Graphic Desgin"
+  },
+  {
+    "id": "mzyIllust",
+    "title": "무중력지대 양천 일러스트작업",
+    "year": "2021",
+    "association": "서울시 청년공간 무중력지대 양천",
+    "category": "Graphic Desgin"
+  },
+  {
+    "id": "hadestown",
+    "title": "뮤지컬 하데스타운 카툰",
+    "year": "2021",
+    "association": "개인 작업",
     "category": "Graphic Desgin"
   }
 ]

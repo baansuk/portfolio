@@ -1,8 +1,9 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { ModalContext } from "../App";
 import ScrollToTopIcon from "../components/icons/ScrollToTopIcon";
 import WorkThumbnail from "../components/WorkThumbnail";
 import works from "../data/works.json";
+import NextIcon from "../components/icons/NextIcon";
 
 const Home = () => {
   const { modal, setModal } = useContext(ModalContext);
@@ -92,44 +93,50 @@ const Home = () => {
             calm and quiet.
           </p>
         </div>
-        <div className="w-full h-[50%] lg:w-[30%] lg:h-screen object-cover relative inset-0 overflow-hidden">
+        <div className="w-full h-[50%] lg:w-[20%] lg:h-screen object-cover relative inset-0 overflow-hidden">
           <img
-            className="opacity-60 mix-blend-soft-light h-full object-cover absolute"
+            className="opacity-70 mix-blend-soft-light h-full object-cover absolute"
             src="/profile_pic.png"
+            alt="portfolio related"
           />
         </div>
+        <img
+          className="lg:h-[80%] h-[50%] top-[5%] lg:top-0 object-cover absolute lg:left-[12%] left-[20%] z-10 "
+          src="/profile_quote.png"
+          alt="portfolio related"
+        />
         <div className="w-full h-full flex flex-col justify-start items-end absolute top-[28%] lg:top-0 left-0 z-20">
           <p className="w-full lg:w-[50%] text-[#9f7d35] text-lg lg:text-2xl lg:m-28 lg:p-0 p-10 indent-12 text-right whitespace-pre-wrap">
             안녕하세요. 회화적 요소를 기반으로 작업하는 시각 디자이너
             황반석입니다.{`\n`}상황에 따라 어울리는 다양한 매체를 활용하여
-            탁월한 시각적 아웃풋을 만들어내기 위해 조용하고 차분하게 노력하고
-            있습니다.
+            탁월한 시각적 아웃풋을 만들어내기 위해 조용하고 차분하게, 하지만
+            꾸준히 노력하고 있습니다.
           </p>
         </div>
         <div className="w-full lg:h-auto h-[380px] inset-0 absolute z-20 flex flex-col justify-start top-[48%] font-light lg:top-[40%] items-end p-10 lg:p-28">
           <div
             onClick={scrollToWorks}
-            className="w-full lg:w-[60%] h-[140px] border-b border-[#9f7d35]  flex flex-row justify-between cursor-pointer items-center text-3xl text-[#9f7d35] hover:bg-[#9f7d35] hover:text-[#5b3815]"
+            className="w-full lg:w-[70%] h-[140px] border-b border-[#9f7d35]  flex flex-row justify-between cursor-pointer items-center text-3xl text-[#9f7d35] hover:bg-[#9f7d35] hover:text-[#5b3815]"
           >
             <p className="font-black text-4xl">01</p>
             <div className="flex flex-col w-[50%] justify-center items-end">
-              <p>WORKS</p>
-              <p>작업물</p>
+              <p>PROJECTS</p>
+              <p>프로젝트</p>
             </div>
           </div>
           <div
             onClick={scrollToResume}
-            className="w-full lg:w-[60%] h-[140px] border-b border-[#9f7d35] flex flex-row justify-between cursor-pointer items-center text-3xl text-[#9f7d35] hover:bg-[#9f7d35] hover:text-[#5b3815]"
+            className="w-full lg:w-[70%] h-[140px] border-b border-[#9f7d35] flex flex-row justify-between cursor-pointer items-center text-3xl text-[#9f7d35] hover:bg-[#9f7d35] hover:text-[#5b3815]"
           >
             <p className="font-black text-4xl">02</p>
-            <div className="flex flex-col w-[50%] justify-center items-end">
+            <div className="flex flex-col w-[70%] justify-center items-end">
               <p>RESUME</p>
               <p>이력서</p>
             </div>
           </div>
           <div
             onClick={scrollToContact}
-            className="w-full lg:w-[60%] h-[140px] flex flex-row justify-between items-center text-3xl cursor-pointer text-[#9f7d35] hover:bg-[#9f7d35] hover:text-[#5b3815]"
+            className="w-full lg:w-[70%] h-[140px] flex flex-row justify-between items-center text-3xl cursor-pointer text-[#9f7d35] hover:bg-[#9f7d35] hover:text-[#5b3815]"
           >
             <p className="font-black text-4xl">03</p>
             <div className="flex flex-col w-[50%] justify-center items-end">
@@ -141,21 +148,27 @@ const Home = () => {
       </div>
       <div
         ref={worksRef}
-        className="relative w-full h-screen overflow-hidden snap-center bg-[#332811] flex flex-col justify-start items-center text-[#9f7d35]"
+        className="relative w-full h-screen overflow-hidden snap-center bg-[#3f3215] flex flex-col justify-start items-center text-[#9f7d35]"
       >
         <div className="w-full h-screen flex flex-col justify-end items-end absolute z-20">
           <img
             className="h-full object-cover z-20 absolute right-0 object-bottom-right"
             src="/works_bg.png"
+            alt="portfolio related"
           />
+        </div>
+        <div
+          className="right-0 bottom-0 w-[40px] h-[40px] lg:w-[60px] lg:h-[60px] absolute z-30  rounded-full  m-10 flex flex-col justify-center items-center cursor-pointer"
+          onClick={scrollToResume}
+        >
+          <NextIcon width="100%" color="#9f7d35" />
         </div>
 
         <div className="w-full h-[100px] py-5  px-10 lg:px-28 flex flex-row justify-between items-center  border-b border-[#9f7d35]">
-          <p className="font-black text-5xl">01.</p>
-          <p className=" w-[10%] lg:w-[20%] font-black text-base lg:text-xl text-right lg:text-center leading-5 lg:leading-auto mx-3">
+          <p className=" w-[10%] lg:w-[20%] font-black text-base lg:text-xl text-left lg:text-center leading-5 lg:leading-auto mx-3">
             calm and quiet.
           </p>
-          <p className=" font-thin text-4xl italic z-20 ">WORKS</p>
+          <img className=" h-[60px] z-20" src="/profile_sections-25.png" />
         </div>
         <div className="w-full h-[50px] border-b  border-[#9f7d35] flex flex-row justify-center items-center lg:text-base text-sm gap-5 ">
           <p className="z-20 rounded-full h-[30px] hover:bg-[#9f7d35] hover:text-[#332811] p-2 flex flex-col justify-center items-center cursor-pointer">
@@ -178,8 +191,44 @@ const Home = () => {
       </div>
       <div
         ref={resumeRef}
-        className="relative w-full h-screen overflow-hidden snap-center bg-[#5b3815]"
-      ></div>
+        className="relative w-full h-screen overflow-hidden snap-center bg-[#3f3215] -z-20 text-[#9f7b33]"
+      >
+        <div
+          className="right-0 bottom-0 w-[40px] h-[40px] lg:w-[60px] lg:h-[60px] absolute z-30  rounded-full  m-10 flex flex-col justify-center items-center cursor-pointer"
+          onClick={scrollToContact}
+        >
+          <NextIcon width="100%" color="#9f7d35" />
+        </div>
+        <div className="w-full h-[100px] py-5  px-10 lg:px-28 flex flex-row justify-between items-center  border-b border-[#9f7d35]">
+          <p className=" w-[10%] lg:w-[20%] font-black text-base lg:text-xl text-left lg:text-center leading-5 lg:leading-auto mx-3">
+            calm and quiet.
+          </p>
+          <img className=" h-[60px] z-20" src="/profile_sections-26.png" />
+        </div>
+        <div className="w-full h-[50px] border-b  border-[#9f7d35] flex flex-row justify-center items-center lg:text-base text-sm gap-5 ">
+          <p className="z-20 rounded-full h-[30px] hover:bg-[#9f7d35] hover:text-[#332811] p-2 flex flex-col justify-center items-center cursor-pointer">
+            ALL
+          </p>
+          <p className="z-20 rounded-full h-[30px] hover:bg-[#9f7d35] hover:text-[#332811] p-2 flex flex-col justify-center items-center cursor-pointer">
+            GRAPHIC
+          </p>
+          <p className="z-20 rounded-full h-[30px] hover:bg-[#9f7d35] hover:text-[#332811] p-2 flex flex-col justify-center items-center cursor-pointer">
+            ILLUSTRATIONS
+          </p>
+        </div>
+        <div className="w-full h-[600px] flex flex-row  border-b border-[#9f7d35]">
+          <div className="h-[600px] overflow-hidden  -z-10">
+            <video
+              className="inset-0 w-full h-full object-cover -z-10 object-bottom-right"
+              autoPlay
+              loop
+              muted
+            >
+              <source src="/resume.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
       <div
         ref={contactRef}
         className="relative w-full h-screen overflow-hidden snap-center bg-[#5b3815]"

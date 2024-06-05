@@ -21,13 +21,7 @@
     "association": "서울시 청년공간 무중력지대 양천",
     "category": "Graphic Desgin"
   },
-  {
-    "id": "mzyStory",
-    "title": "무중력스토리: 나의 이야기를 찾아서",
-    "year": "2021",
-    "association": "서울시 청년공간 무중력지대 양천",
-    "category": "Graphic Desgin"
-  },
+
   {
     "id": "mzyIllust",
     "title": "무중력지대 양천 일러스트작업",
@@ -36,10 +30,17 @@
     "category": "Graphic Desgin"
   },
   {
-    "id": "hadestown",
-    "title": "뮤지컬 하데스타운 카툰",
+    "id": "mzyStory",
+    "title": "무중력스토리: 나의 이야기를 찾아서",
     "year": "2021",
-    "association": "개인 작업",
+    "association": "서울시 청년공간 무중력지대 양천",
+    "category": "Graphic Desgin"
+  },
+  {
+    "id": "digilog",
+    "title": "YUST 졸업전시회 DIGILOG 영상제작",
+    "year": "2015",
+    "association": "YUST Industrial Design class of 2015",
     "category": "Graphic Desgin"
   }
 ]

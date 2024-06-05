@@ -64,6 +64,28 @@ body {
   background: #9b6464;
 }
 
+.typeMzyIllust::-webkit-scrollbar {
+  width: 4px;
+}
+.typeMzyIllust::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.typeMzyIllust::-webkit-scrollbar-thumb {
+  background: #f6dd62;
+}
+
+.typeMzyStory::-webkit-scrollbar {
+  width: 4px;
+}
+.typeMzyStory::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.typeMzyStory::-webkit-scrollbar-thumb {
+  background: #2c2b25;
+}
+
 .image-slider {
   position: absolute;
   overflow: hidden;

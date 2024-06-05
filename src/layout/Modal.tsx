@@ -4,6 +4,8 @@ import MUFF4 from "../components/works/MUFF4";
 import MZY from "../components/works/MZY";
 import MUFF5 from "../components/works/MUFF5";
 import MZYIllust from "../components/works/MZYillust";
+import Digilog from "../components/works/Digilog";
+import MZYStory from "../components/works/MZYStory";
 
 const Modal = ({}) => {
   const { modal, setModal } = useContext(ModalContext);
@@ -31,6 +33,10 @@ const Modal = ({}) => {
             <MUFF5 />
           ) : modal.id === "mzyIllust" ? (
             <MZYIllust />
+          ) : modal.id === "digilog" ? (
+            <Digilog />
+          ) : modal.id === "mzyStory" ? (
+            <MZYStory />
           ) : (
             <></>
           )}

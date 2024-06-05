@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import Modal from "./layout/Modal";
 
 interface ModalState {
@@ -29,7 +29,7 @@ function App() {
   });
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio">
         <ModalContext.Provider value={{ modal, setModal }}>
           {modal.open === true && <Modal />}
           <Routes>

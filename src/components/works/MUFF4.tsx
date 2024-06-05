@@ -6,8 +6,8 @@ import ExternalLinkIcon from "../icons/ExternalLinkIcon";
 const MUFF4 = () => {
   const { modal, setModal } = useContext(ModalContext);
   return (
-    <div className="w-full h-[800px] noScroll flex flex-col justify-start items-center bg-[#282a2b] text-[#b2b0b2]">
-      <div className="w-full h-[70px] font-md flex flex-row justify-between items-center fixed p-3 pl-8 text-xl bg-[#282a2b]">
+    <div className="w-full h-full noScroll text-sm flex flex-col justify-start items-center bg-[#282a2b] text-[#b2b0b2] leading-6">
+      <div className="w-full h-[10%] font-md flex flex-row justify-between items-center fixed p-3 pl-8 text-xl bg-[#282a2b]">
         <p>제4회 무중력영화제 브랜딩</p>{" "}
         <div
           className="w-[40px] cursor-pointer font-thin text-xl"
@@ -16,24 +16,24 @@ const MUFF4 = () => {
           ╳
         </div>
       </div>
-      <div className="w-full mt-[70px] h-[700px] flex flex-col justify-start items-center typeMuff4 overflow-y-auto overflow-x-hidden snap-y snap-mandatory relative">
-        <div className="w-full h-full flex flex-col lg:flex-row justify-start lg:justify-between items-center snap-center relative  p-10">
+      <div className="w-full mt-[70px] h-full flex flex-col justify-start items-center typeMuff4 overflow-y-auto overflow-x-hidden snap-y snap-mandatory relative ">
+        <div className="w-full h-screen  flex flex-col lg:flex-row justify-start lg:justify-between items-center snap-center relative  p-10">
           <img
-            className="h-[650px] lg:h-full absolute lg:inset-0 object-cover object-bottom"
-            src="/muff4_1.png"
+            className=" lg:h-full absolute lg:inset-0 object-cover object-bottom"
+            src="/portfolio/muff4_1.png"
             alt="4th mujungryuck film festival related"
           />
-          <div className="h-[700px] w-[30%]"></div>
-          <div className="lg:w-[80%] w-full h-[640px] lg:p-5 p-2 flex flex-col justify-start items-end z-10">
+          <div className=" w-[30%]"></div>
+          <div className="lg:w-[80%] w-full lg:p-5 p-2 flex flex-col justify-start items-end z-10">
             <img
-              className=" w-full lg:w-[700px] object-cover py-10 lg:p-10 lg:mb-10 "
-              src="/muff4_poster.png"
+              className=" w-full lg:w-[730px] object-cover py-10 lg:p-10 lg:mb-10 "
+              src="/portfolio/muff4_poster.png"
               alt="4th mujungryuck film festival related"
             />
             <p className="font-bold px-3 underline">
               MUJUNGRYUCK FILM FESTIVAL, SEOUL'21
             </p>
-            <p className="p-3 text-right lg:text-base text-sm">
+            <p className="p-3 text-right lg:text-[15px] text-[15px]">
               무중력영화제(MUFF)는 2018년부터 청년 영화인들이 작품 상영을 통해
               관객과 소통할 기회를 제공하기 위해 매년 진행되었습니다. 2021년,
               “우리들의 공간으로 당신을 초대합니다.” 라는 슬로건으로 개최된
@@ -43,18 +43,18 @@ const MUFF4 = () => {
             </p>
           </div>
         </div>
-        <div className="w-full h-full flex flex-col lg:flex-row lg:justify-between justify-start items-start snap-center relative">
+        <div className="w-full flex flex-col lg:flex-row lg:justify-between justify-start items-start snap-center relative">
           <video
-            className="h-[90%] object-cover absolute left-[3%] bottom-0 lg:blur-none blur-lg opacity-70 lg:opacity-100"
-            src="/muff4_door.mp4"
+            className="h-[80%] object-cover absolute left-[3%] bottom-0 lg:blur-none blur-lg opacity-70 lg:opacity-100"
+            src="/portfolio/muff4_door.mp4"
             autoPlay
             loop
           />
 
-          <div className="w-full h-[700px] relative flex flex-col justify-start items-end"></div>
+          <div className="w-full h-[730px] relative flex flex-col justify-start items-end"></div>
           <div className="absolute lg:p-20 w-full lg:w-[70%] h-full  right-0 text-right flex flex-col justify-start items-end">
             <p className="px-3 font-bold underline">DESIGN DIRECTION</p>
-            <p className="p-3 lg:text-base text-sm">
+            <p className="p-3 lg:text-[15px] text-[15px]">
               팬데믹으로 인해 서로 단절된 일상에서 느끼게 된 무미건조함,
               무기력함 등을 표현하기 위해 전반적인 색을 흑백 모노톤으로
               맞추었습니다. 동시에 영화와 관련된 요소는 여러가지 색을 넣어
@@ -78,7 +78,7 @@ const MUFF4 = () => {
             <p className="w-full text-left px-3 font-bold underline mt-20">
               DOOR
             </p>
-            <p className="text-left w-full p-3 lg:text-base text-sm">
+            <p className="text-left w-full p-3 lg:text-[15px] text-[15px]">
               테마로 선택한 '문'은 공간과 공간을 이어주는 매개체로서의 의미를
               가집니다. 팬데믹으로 인해 외부와 단절되어 살아가는 많은 사람들에게
               온전히 고립되어 있기만한 물리적, 혹은 심리적 공간은 없으며, 우리는
@@ -89,13 +89,13 @@ const MUFF4 = () => {
         </div>
         <div className="w-full h-full flex flex-col lg:flex-row lg:justify-between justify-start items-start snap-center relative">
           <img
-            className="w-full lg:w-[80%]  absolute lg:right-0 bottom-0 p-10 hidden lg:flex"
-            src="/muff4_trailer.png"
+            className="w-full lg:w-[70%]  absolute lg:right-0 bottom-10 hidden lg:flex"
+            src="/portfolio/muff4_trailer.png"
             alt="4th mujungryuck film festival related"
           />
-          <div className="w-full h-[400px] lg:h-[700px] relative flex flex-col justify-start items-start">
+          <div className="w-full h-[400px] lg:h-[730px] relative flex flex-col justify-start items-start">
             <iframe
-              className="w-[640px] h-[360px] top-0 left-0 z-20 relative lg:absolute lg:m-10 drop-shadow-lg"
+              className="w-[560px] h-[315px] top-0 left-0 z-20 relative lg:absolute lg:m-10 drop-shadow-lg"
               src="https://www.youtube.com/embed/vJ9QkgGk97k"
               title="YouTube video player"
               allow="autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -108,7 +108,7 @@ const MUFF4 = () => {
           </p>
           <div className="lg:p-10 w-full h-[300px] lg:h-auto lg:w-[60%] text-right">
             <p className="px-3 font-bold underline">TRAILER</p>
-            <p className="p-3 lg:text-base text-sm">
+            <p className="p-3 lg:text-[15px] text-[15px]">
               4회 무중력영화제의 섹션은 “돌아보다”, “마주보다”, “바라보다”로
               물리적, 혹은 심리적인 공간 내에서 서로 어떻게 상호작용하는지를
               각각의 의미를 담은 영화들을 통해 그려냈습니다. 트레일러에서는
@@ -120,50 +120,50 @@ const MUFF4 = () => {
         <div className="w-full h-full flex flex-col lg:flex-row lg:justify-between justify-start items-start snap-center relative">
           <img
             className="h-full object-cover absolute left-0 bottom-0 "
-            src="/muff4_merch_1.png"
+            src="/portfolio/muff4_merch_1.png"
             alt="4th mujungryuck film festival related"
           />
 
           <img
             className="h-[450px] absolute right-0 bottom-0 object-cover "
-            src="/muff4_merch-cardbottom.png"
+            src="/portfolio/muff4_merch-cardbottom.png"
             alt="4th mujungryuck film festival related"
           />
           <img
             className="h-[460px] absolute right-0 top-0 object-cover"
-            src="/muff4_merch-cardtop.png"
+            src="/portfolio/muff4_merch-cardtop.png"
             alt="4th mujungryuck film festival related"
           />
           <img
             className="h-[250px] absolute m-1 lg:m-3 left-0 top-0 "
-            src="/muff4_merch-tape.png"
+            src="/portfolio/muff4_merch-tape.png"
             alt="4th mujungryuck film festival related"
           />
           <img
             className="h-[110px] absolute m-1 lg:m-3 right-[8%] top-[45%] "
-            src="/muff4_icons-34.png"
+            src="/portfolio/muff4_icons-34.png"
             alt="4th mujungryuck film festival related"
           />
           <img
             className="h-[100px] absolute m-1 lg:m-3 right-[33%] bottom-[3%] "
-            src="/muff4_icons-32.png"
+            src="/portfolio/muff4_icons-32.png"
             alt="4th mujungryuck film festival related"
           />
           <img
             className="h-[90px] absolute m-1 lg:m-3 right-[35%] top-[5%] "
-            src="/muff4_icons-35.png"
+            src="/portfolio/muff4_icons-35.png"
             alt="4th mujungryuck film festival related"
           />
 
           <img
             className="h-[100px] absolute m-1 lg:m-3 left-[5%] top-[50%] "
-            src="/muff4_icons-33.png"
+            src="/portfolio/muff4_icons-33.png"
             alt="4th mujungryuck film festival related"
           />
-          <div className="w-full h-[700px] relative flex flex-col justify-start items-start"></div>
+          <div className="w-full h-[730px] relative flex flex-col justify-start items-start"></div>
           <div className="absolute lg:px-20 w-full h-[300px] top-[30%] lg:h-auto lg:w-[80%] text-left">
             <p className="px-3 font-bold underline">MERCH</p>
-            <p className="p-3 lg:text-base text-sm">
+            <p className="p-3 lg:text-[15px] text-[15px]">
               굿즈 디자인은 출품한 12개의 작품들 하나하나의 핵심 요소를
               아이콘으로 만들고 영화의 장면들을 일러스트로 그려내었습니다.
               온라인 상영회로 진행되었기 때문에 신청자에 한하여 굿즈를 택배로
@@ -176,19 +176,19 @@ const MUFF4 = () => {
         <div className="w-full h-full flex flex-col lg:flex-row lg:justify-between justify-start items-start snap-center relative">
           <img
             className="h-full object-cover absolute right-0 top-0 lg:blur-0 blur-lg "
-            src="/muff4_poster_mu.png"
+            src="/portfolio/muff4_poster_mu.png"
             alt="4th mujungryuck film festival related"
           />
           <img
             className="w-full px-24 object-cover drop-shadow-lg absolute bottom-[15%] lg:blur-0 blur-lg "
-            src="/muff4_photos.png"
+            src="/portfolio/muff4_photos.png"
             alt="4th mujungryuck film festival related"
           />
 
-          <div className="w-full h-[700px] relative flex flex-col justify-start items-start"></div>
+          <div className="w-full h-[730px] relative flex flex-col justify-start items-start"></div>
           <div className="absolute lg:px-20 w-full h-[300px] top-[15%] lg:h-auto lg:w-[60%] text-left">
             <p className="px-3 font-bold underline">FURTHER INFORMATIONS</p>
-            <p className="p-3 lg:text-base text-sm whitespace-pre-wrap">
+            <p className="p-3 lg:text-[15px] text-[15px] whitespace-pre-wrap">
               주최/주관: 무중력지대 양천, 시네마디, 서울특별시, 양천구{`\n`}
               기획팀: 오유진(팀장) 양보라, 정혜원, 황반석{`\n`}
               기획단(시네마디 4기): 김미경 김민지 김경혜 김종률 안현지 윤태영
@@ -234,7 +234,7 @@ const MUFF4 = () => {
 {
   /*            <img
               className="h-full absolute lg:right-0 object-cover object-top"
-              src="/muff4_poster_mu.png"
+              src="/portfolio/muff4_poster_mu.png"
             />  */
 }
 

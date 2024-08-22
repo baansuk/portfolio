@@ -267,11 +267,6 @@ const Home = () => {
               <p>황반석</p>
               <p>BANSUK HWANG</p>
               <p>1993.02.09</p>
-              <p>서울특별시 강서구 화곡로350 1117호</p>
-            </div>
-            <div className="w-full h-auto flex flex-col py-5  text-lg">
-              <p>baansuk_hwang@naver.com</p>
-              <p>(+82)010-2629-2693</p>
             </div>
           </div>
           {resumeSection === "history" ? (

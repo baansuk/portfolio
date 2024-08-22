@@ -8,7 +8,7 @@ const Career = () => {
       </div>
       <div className="w-full h-auto flex flex-col p-5  text-lg">
         <div className=" border-b border-[#9f7d35] w-full min-h-[50px] mt-5 pb-3 gap-2 flex flex-row justify-between items-center">
-          <p>하나투어 온라인디자인팀(2023~)</p>
+          <p>하나투어 온라인디자인팀(2023~2024)</p>
           <div className="flex flex-col justify-start items-end">
             <p>상세페이지 디자인</p>
             <p className="text-xs mb-2">

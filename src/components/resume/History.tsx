@@ -8,7 +8,7 @@ const History = () => {
       </div>
       <div className="w-full h-auto flex flex-col p-5  text-lg">
         <div className=" border-b border-[#9f7d35] w-full h-[50px] flex flex-row justify-between items-center">
-          <p>2023 - </p>
+          <p>2023 - 2024</p>
           <p>하나투어 온라인디자인팀 근무</p>
         </div>
         <div className=" border-b border-[#9f7d35] w-full h-[50px] flex flex-row justify-between items-center">
